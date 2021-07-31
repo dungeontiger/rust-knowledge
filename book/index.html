@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html" class="active"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -176,6 +176,20 @@ Of then the examples are very simple and I had a hard time extrapolating to a mo
 
         </div>
 
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
         
         

@@ -1,4 +1,7 @@
 # Introduction
+
+Version 0.1
+
 This is a collection of Rust knowledge. 
 
 As I learn Rust I wanted a permanent location to record the knowledge.  I liked the mdbook format so

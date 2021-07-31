@@ -3,7 +3,8 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Rust Knowledge</title>
+        <title>Rust Knowledge</title>
+                <meta name="robots" content="noindex" />
                 
 
         <!-- Custom HTML head -->
@@ -82,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html" class="active"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -152,15 +153,22 @@ decided to use that.</p>
 documentation sufficient. I had to spend a lot of time with trial and error to get many things to work.
 Of then the examples are very simple and I had a hard time extrapolating to a more complex real work case.</p>
 <p>The things I learned that I felt need to be recorded are included here.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="result-and-option"><a class="header" href="#result-and-option">Result and Option</a></h1>
+<p>All the methods.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vec"><a class="header" href="#vec">Vec</a></h1>
+<p>All the vec methods</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="modules"><a class="header" href="#modules">Modules</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="testing"><a class="header" href="#testing">Testing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="best-practises"><a class="header" href="#best-practises">Best Practises</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="json"><a class="header" href="#json">JSON</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="async"><a class="header" href="#async">Async</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contributors"><a class="header" href="#contributors">Contributors</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                                                    <a rel="next" href="result_option.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
                         <div style="clear: both"></div>
                     </nav>
@@ -169,13 +177,24 @@ Of then the examples are very simple and I had a hard time extrapolating to a mo
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                                    <a rel="next" href="result_option.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                             </nav>
 
         </div>
 
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
         
         
@@ -194,6 +213,11 @@ Of then the examples are very simple and I had a hard time extrapolating to a mo
 
         <!-- Custom JS scripts -->
         
-        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+                
     </body>
 </html>

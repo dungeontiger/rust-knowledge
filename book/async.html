@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Rust Knowledge</title>
+        <title>async - Rust Knowledge</title>
                 
 
         <!-- Custom HTML head -->
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html" class="active"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="result_option.html"><strong aria-hidden="true">2.</strong> Result and Option</a></li><li class="chapter-item expanded "><a href="vec.html"><strong aria-hidden="true">3.</strong> Vec</a></li><li class="chapter-item expanded "><a href="modules.html"><strong aria-hidden="true">4.</strong> Modules</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">5.</strong> Testing</a></li><li class="chapter-item expanded "><a href="best_practises.html"><strong aria-hidden="true">6.</strong> Best Practises</a></li><li class="chapter-item expanded "><a href="json.html"><strong aria-hidden="true">7.</strong> JSON</a></li><li class="chapter-item expanded "><a href="async.html" class="active"><strong aria-hidden="true">8.</strong> async</a></li><li class="chapter-item expanded "><a href="contributors.html"><strong aria-hidden="true">9.</strong> Contributors</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -143,22 +143,17 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Version 0.1</p>
-<p>This is a collection of Rust knowledge. </p>
-<p>As I learn Rust I wanted a permanent location to record the knowledge.  I liked the mdbook format so
-decided to use that.</p>
-<p>Why another reference for Rust information when there is so much out there? I do not find the Rust
-documentation sufficient. I had to spend a lot of time with trial and error to get many things to work.
-Of then the examples are very simple and I had a hard time extrapolating to a more complex real work case.</p>
-<p>The things I learned that I felt need to be recorded are included here.</p>
+                        <h1 id="async"><a class="header" href="#async">Async</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="json.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
-                                                    <a rel="next" href="result_option.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="contributors.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -168,14 +163,31 @@ Of then the examples are very simple and I had a hard time extrapolating to a mo
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="json.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
-                                    <a rel="next" href="result_option.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="contributors.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
 
         </div>
 
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
         
         
